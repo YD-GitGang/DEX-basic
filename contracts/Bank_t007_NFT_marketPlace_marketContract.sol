@@ -58,5 +58,4 @@ contract NFTMarket is Ownable {
     receive() external payable{
 
     }
-    
 }
