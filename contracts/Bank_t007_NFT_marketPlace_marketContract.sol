@@ -19,7 +19,7 @@ contract NFTMarket is Ownable {
     Kitty[] kitties;
     mapping(address => uint256[])ownedKitties;
     uint private price = 1000000000000000000; //1ETH
-    address private bankAddr = 0xd9145CCE52D386f254917e481eB44e9943F39138;
+    address private bankAddr = 0x0000000000000000000000000000000000000000;  //bankContractのアドレス
     IBank bank = IBank(bankAddr);
 
     function createKitty(string memory _name) external onlyOwner {
